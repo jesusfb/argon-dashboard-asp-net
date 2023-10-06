@@ -56,9 +56,9 @@ namespace CreativeTim.Argon.DotNetCore.Free
                 // as they are not always compatible between database systems
 
                 // The easiest option for development outside a container is to use SQLite
-                // options.UseSqlite(Configuration.GetConnectionString("SqliteConnection"));
+                 options.UseSqlite(Configuration.GetConnectionString("SqliteConnection"));
                 // Or use this for PostgreSQL:
-                options.UseNpgsql(Configuration.GetConnectionString("PostgresConnection"));
+                //options.UseNpgsql(Configuration.GetConnectionString("PostgresConnection"));
 
                 // Use this to connect to a MySQL server:
                 // options.UseMySQL(Configuration.GetConnectionString("MysqlConnection"));
